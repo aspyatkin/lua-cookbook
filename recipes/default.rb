@@ -7,7 +7,7 @@ node[id]['packages'].each do |pkg|
   end
 end
 
-if node[id]['install_deve']
+if node[id]['install_devel']
   node[id]['devel_packages'].each do |pkg|
     package pkg do
       action :install
